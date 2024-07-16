@@ -1,4 +1,6 @@
-# Prerequisites
+# Spin + Leptos sandbox
+
+## Prerequisites
 
 - Rust [with the `wasm32-wasi` target](https://developer.fermyon.com/spin/v2/install) - `rustup target add wasm32-wasi`
 - [Spin](https://developer.fermyon.com/spin/v2/install)
