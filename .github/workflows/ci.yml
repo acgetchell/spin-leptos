@@ -20,6 +20,9 @@ jobs:
           toolchain: stable
           target: wasm32-wasi
 
+      - name: Install cargo leptos
+        run: cargo install --locked cargo-leptos
+      
       - name: Install Spin
         uses: fermyon/actions/spin/setup@v1
       
@@ -39,6 +42,9 @@ jobs:
           toolchain: stable
           target: wasm32-wasi
 
+      - name: Install cargo leptos
+        run: cargo install --locked cargo-leptos
+        
       - name: Install Spin
         uses: fermyon/actions/spin/setup@v1
 
