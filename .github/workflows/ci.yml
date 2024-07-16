@@ -24,9 +24,7 @@ jobs:
         uses: fermyon/actions/spin/setup@v1
       
       - name: Build and test
-        run: |
-            spin doctor
-            cargo test --verbose
+        run: spin build && cargo test --verbose
 
   spin:
     needs: test
