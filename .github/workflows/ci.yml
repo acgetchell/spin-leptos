@@ -21,7 +21,7 @@ jobs:
           target: wasm32-wasi, wasm32-unknown-unknown
 
       - name: Install cargo leptos
-        run: cargo install --locked cargo-leptos
+        run: cargo install cargo-leptos
       
       - name: Install Spin
         uses: fermyon/actions/spin/setup@v1
@@ -46,7 +46,7 @@ jobs:
           target: wasm32-wasi, wasm32-unknown-unknown
 
       - name: Install cargo leptos
-        run: cargo install --locked cargo-leptos
+        run: cargo install cargo-leptos
         
       - name: Install Spin
         uses: fermyon/actions/spin/setup@v1
