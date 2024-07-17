@@ -27,7 +27,10 @@ jobs:
         uses: fermyon/actions/spin/setup@v1
       
       - name: Build and test
-        run: spin build && cargo test --verbose
+        run: |
+          LEPTOS_WASM_OPT_VERSION=version_118 spin build
+          spin doctor
+          cargo test --verbose
 
   spin:
     needs: test
